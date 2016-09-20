@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Elena Wiener Developer | Resume</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans+Condensed:300|PT+Sans+Narrow|PT+Sans:700|Roboto|Open+Sans";');
+/*
+$open-cond: 'Open Sans Condensed', sans-serif;
+pt-narrow: 'PT Sans Narrow', sans-serif;
+$monts: 'Montserrat', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$pt-sans 'PT Sans', sans-serif;
+*/
+/* Global values */
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #E3E3E3;
+  color: #8B8B8D;
+  padding: 80px 20px 0;
+  margin-top: 50px;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #5fdeab;
+  font-weight: 600;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.mail i {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+ul li {
+  font-size: 18px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+ul li a {
+  font-size: 18px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+.cont {
+  position: relative;
+  top: -80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-image: linear-gradient(to left bottom, #34c8fc 0%, #6781f3 100%);
+  overflow: hidden;
+}
+
+.app {
+  position: relative;
+  min-width: 850px;
+  height: 500px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.app__bgimg {
+  position: absolute;
+  top: 0;
+  left: -2.5%;
+  width: 105%;
+  height: 100%;
+  transition: transform 3.5s 770ms;
+}
+.app__bgimg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.app__bgimg-image--1 {
+  background: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/13728922_10154251798882557_7229244029793618669_n.jpg?oh=76b7f5ac7d5738b1ed896514d727ee9f&oe=583924FA") center center no-repeat;
+  background-size: cover;
+}
+.app__bgimg-image--2 {
+  background: url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/12729100_10153858219247557_7594560502796067178_n.jpg?oh=7991303f57157379e04c82853627411b&oe=5869C482") center center no-repeat;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0ms 1300ms;
+  will-change: opacity;
+}
+.app__text {
+  position: absolute;
+  right: 185px;
+  top: 100px;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.app__text-line {
+  transition: transform 1500ms 400ms, opacity 750ms 500ms;
+  will-change: transform, opacity;
+  user-select: none;
+}
+.app__text-line--4 {
+  transition: transform 1500ms 1500ms, opacity 1500ms 1500ms;
+}
+.app__text-line--3 {
+  transition: transform 1500ms 1600ms, opacity 1500ms 1750ms;
+}
+.app__text-line--2 {
+  transition: transform 1500ms 1700ms, opacity 1500ms 2000ms;
+}
+.app__text-line--1 {
+  transition: transform 1500ms 1800ms, opacity 1500ms 2250ms;
+}
+.app__text-line--4 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #34c8fc;
+}
+.app__text-line--3 {
+  font-size: 30px;
+  font-weight: 300;
+  font-color: #6f59e0;
+}
+.app__text-line--2 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6f59e0;
+}
+.app__text-line--1 {
+  margin-top: 35px;
+}
+.app__text-line--1 img {
+  width: 50px;
+}
+.app__text--1 .app__text-line {
+  transform: translate3d(0, -125px, 0);
+  opacity: 0;
+}
+.app__text--2 {
+  right: initial;
+  top: 250px;
+  left: 80px;
+  z-index: -1;
+  transition: z-index 1500ms;
+}
+.app__text--2 .app__text-line--4 {
+  opacity: 0;
+  transition: transform 1500ms -75ms, opacity 400ms 125ms;
+}
+.app__text--2 .app__text-line--3 {
+  opacity: 0;
+  transition: transform 1500ms 0ms, opacity 400ms 200ms;
+}
+.app__text--2 .app__text-line--2 {
+  opacity: 0;
+  transition: transform 1500ms 75ms, opacity 400ms 275ms;
+}
+.app__text--2 .app__text-line--1 {
+  opacity: 0;
+  transition: transform 1500ms 150ms, opacity 400ms 350ms;
+}
+.app__img {
+  position: absolute;
+  transform: translate3d(0, -750px, 0);
+  width: 850px;
+  height: 100%;
+  transition: transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02);
+  will-change: transform;
+}
+.app__img img {
+  min-width: 100%;
+  user-select: none;
+}
+
+.initial .app__img {
+  transform: translate3d(0, 0, 0);
+}
+.initial .app__text--1 .app__text-line--1 {
+  transform: translate3d(0, 0, 0);
+  transition: transform 1500ms 1400ms, opacity 400ms 1600ms;
+  opacity: 1;
+}
+.initial .app__text--1 .app__text-line--2 {
+  transform: translate3d(0, 0, 0);
+  transition: transform 1500ms 1475ms, opacity 400ms 1675ms;
+  opacity: 1;
+}
+.initial .app__text--1 .app__text-line--3 {
+  transform: translate3d(0, 0, 0);
+  transition: transform 1500ms 1550ms, opacity 400ms 1750ms;
+  opacity: 1;
+}
+.initial .app__text--1 .app__text-line--4 {
+  transform: translate3d(0, 0, 0);
+  transition: transform 1500ms 1625ms, opacity 400ms 1825ms;
+  opacity: 1;
+}
+
+.active .app__bgimg {
+  transform: translate3d(10px, 0, 0) scale(1.05);
+  transition: transform 5s 850ms ease-in-out;
+}
+.active .app__bgimg .app__bgimg-image--2 {
+  opacity: 1;
+  transition: opacity 0ms 1500ms;
+}
+.active .app__img {
+  transition: transform 3s cubic-bezier(0.6, 0.13, 0.31, 1.02);
+  transform: translate3d(0, -1410px, 0);
+}
+.active .app__text--1 {
+  z-index: -1;
+  transition: z-index 0ms 1500ms;
+}
+.active .app__text--1 .app__text-line--1 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 1500ms 300ms, opacity 400ms 500ms;
+  opacity: 0;
+}
+.active .app__text--1 .app__text-line--2 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 1500ms 375ms, opacity 400ms 575ms;
+  opacity: 0;
+}
+.active .app__text--1 .app__text-line--3 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 1500ms 450ms, opacity 400ms 650ms;
+  opacity: 0;
+}
+.active .app__text--1 .app__text-line--4 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 1500ms 525ms, opacity 400ms 725ms;
+  opacity: 0;
+}
+.active .app__text--2 {
+  z-index: 1;
+}
+.active .app__text--2 .app__text-line--1 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1100ms, opacity 1300ms 1300ms;
+  opacity: 1;
+}
+.active .app__text--2 .app__text-line--2 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1175ms, opacity 1300ms 1575ms;
+  opacity: 1;
+}
+.active .app__text--2 .app__text-line--3 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1250ms, opacity 1300ms 1850ms;
+  opacity: 1;
+}
+.active .app__text--2 .app__text-line--4 {
+  transform: translate3d(0, -125px, 0);
+  transition: transform 2500ms 1325ms, opacity 1300ms 2125ms;
+  opacity: 1;
+}
+
+.mouse {
+  position: relative;
+  margin-right: 20px;
+  min-width: 50px;
+  height: 80px;
+  border-radius: 30px;
+  border: 5px solid rgba(255, 255, 255, 0.8);
+}
+.mouse:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #5fdeab;
+  animation: scroll 1s infinite alternate;
+}
+@keyframes scroll {
+  100% {
+    transform: translate(-50%, 15px);
+  }
+}
+.pages {
+  margin-left: 20px;
+}
+.pages__listul, .pages__listul li {
+  list-style-type: none;
+}
+.pages__item {
+  position: relative;
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+.pages__item:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0, 0);
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  background-color: #6f59e0;
+  opacity: 0;
+  transition: 500ms;
+}
+.pages__item:hover:after {
+  transform: translate(-50%, -50%) scale(1, 1);
+  opacity: 1;
+}
+
+.page__item-active:after {
+  transform: translate(-50%, -50%) scale(1, 1);
+  opacity: 1;
+}
+
+.icon-link {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: 50px;
+}
+.icon-link img {
+  width: 100%;
+  vertical-align: top;
+}
+.icon-link--twitter {
+  left: auto;
+  right: 5px;
+}
+
+.elena ul,
+.elena li {
+  padding: 0;
+  margin: 0;
+  list-style-type: circle;
+}
+.elena h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #6f59e0;
+  margin: 0;
+  margin-top: 30px;
+}
+.elena h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  color: #6f59e0;
+}
+.elena h3 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 46px;
+  margin: 50px 0;
+  text-align: center;
+  color: #6781f3;
+}
+.elena h4 {
+  font-size: 28px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+  line-height: 46px;
+  margin: 0;
+}
+.elena p {
+  margin: 30px 0;
+}
+.elena .grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.elena nav .grid {
+  padding: 0 20px;
+}
+.elena .center {
+  text-align: center;
+}
+.elena ul.social-list {
+  display: block;
+}
+.elena ul.social-list li {
+  font-family: 'PT Sans Narrow', sans-serif;
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 18px;
+}
+.elena ul.social-list li i {
+  font-weight: 500;
+  opacity: .8;
+  font-size: 24px;
+}
+.elena .link {
+  font-family: 'Montserrat', sans-serif;
+  color: #34c8fc;
+  border-bottom: 2px solid currentColor;
+  margin-bottom: -2px;
+  position: relative;
+  -webkit-transition: color 150ms;
+  transition: color 150ms;
+}
+.elena .link.company {
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-top: 10px;
+  float: left;
+  display: inline;
+}
+.elena .link span.divide {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.elena .link span.location {
+  float: left;
+  margin-right: 5px;
+}
+.elena .link.social {
+  color: #34c8fc;
+  text-decoration: none;
+  font-size: 24px;
+  border: 0;
+}
+.elena .link:active {
+  top: 2px;
+}
+.elena .link:hover {
+  opacity: .8;
+  color: #ccc;
+}
+.elena .link.twitter {
+  color: #55ACEE;
+}
+.elena .link.facebook {
+  color: #5973A8;
+}
+.elena .btn {
+  cursor: pointer;
+  display: inline-block;
+  font: 500 16px/22px 'Montserrat', sans-serif;
+  line-height: 45px;
+  padding: 0 20px;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: 0;
+  position: relative;
+  box-shadow: inset 0 -2px 0px rgba(0, 0, 0, 0.2);
+}
+.elena .btn:active {
+  top: 2px;
+  box-shadow: none;
+}
+.elena .btn + .btn {
+  margin-left: 15px;
+}
+.elena .menu {
+  position: relative;
+  float: left;
+  left: 13px;
+  top: 13px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: opacity 150ms;
+  transition: opacity 150ms;
+}
+.elena .menu:hover {
+  opacity: 1;
+}
+.elena .menuHidden .menu {
+  opacity: 0;
+  pointer-events: none;
+}
+.elena .hamburger,
+.elena .hamburger::after,
+.elena .hamburger::before {
+  margin: 0 auto;
+  display: block;
+  width: 24px;
+  height: 3px;
+  line-height: 0;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+.elena .hamburger::before {
+  content: '';
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #fff;
+}
+.elena .hamburger::after {
+  content: '';
+  -webkit-transform: rotate(-45deg) translate(2px, -2px);
+  -ms-transform: rotate(-45deg) translate(2px, -2px);
+  transform: rotate(-45deg) translate(2px, -2px);
+  background: #fff;
+}
+.elena .skype {
+  display: inline-block;
+  line-height: 0;
+  vertical-align: middle;
+}
+.elena .skype p {
+  margin: 0;
+  font-size: 16px;
+}
+.elena .skype p img {
+  margin: 0 !important;
+  vertical-align: middle !important;
+}
+.elena header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  right: 0;
+}
+.elena .top-bar {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 66px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 1px;
+  background: #0396E3;
+  z-index: 1;
+  position: relative;
+}
+.elena .top-bar .mail,
+.elena .skype {
+  margin: 0 20px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: .5px;
+  opacity: .7;
+  -webkit-transition: opacity 150ms;
+  transition: opacity 150ms;
+}
+.elena .top-bar .mail:hover,
+.elena .skype:hover {
+  opacity: 1;
+}
+.elena nav {
+  z-index: 1;
+  background: #00A8FF;
+  position: fixed;
+  top: 46px;
+  left: 0;
+  right: 0;
+  padding: 50px 0 0;
+  -webkit-transition: -webkit-transform 150ms;
+  transition: transform 150ms;
+  box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.25);
+}
+.elena nav a {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 60px;
+  font-size: 16px;
+  margin: 0 60px 0 0;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+.elena nav a:last-child {
+  margin-right: 0;
+}
+.elena nav a:hover, .elena nav a.active {
+  color: #fff;
+}
+.elena nav a:active, .elena nav a.active {
+  box-shadow: inset 0 -2px 0 currentColor;
+}
+.elena .collapsed .hamburger {
+  background: #fff;
+}
+.elena .collapsed .hamburger::after {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+.elena .collapsed .hamburger::before {
+  -webkit-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+.elena .collapsed nav {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.elena .box {
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  padding: 20px 40px;
+  margin: auto 10px;
+}
+.elena .white-box {
+  background: #fff;
+}
+.elena .green-box {
+  padding: 30px 80px 30px;
+  background: #34c2ad;
+  margin-top: 30px;
+  color: #fff;
+}
+.elena .blue-box {
+  background: #34c8fc;
+  color: #fff;
+  padding: 30px 80px 30px;
+}
+.elena .blue-box li {
+  font-size: 20px;
+}
+.elena .hero {
+  line-height: 30px;
+  padding-top: 80px;
+  text-align: center;
+  position: relative;
+}
+.elena .hero p {
+  font-size: 18px;
+  margin-bottom: 70px;
+}
+.elena .hero .thumb {
+  -webkit-transition: width 150ms, height 150ms;
+  transition: width 150ms, height 150ms;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.elena body:not(.collapsed) header:not(.menuHidden) + .hero .thumb,
+.elena .hero.sticky .thumb {
+  box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 50px;
+  width: 100px;
+  zoom: 1;
+  height: 100px;
+}
+.elena .timeline {
+  position: relative;
+}
+.elena .timeline i {
+  font-size: 11px;
+  color: #ccc;
+}
+.elena .timeline::before {
+  content: '';
+  height: 100%;
+  width: 2px;
+  background: #B6B6B6;
+  display: block;
+  list-style-type: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  box-shadow: inset 0 -100px 100px -30px #E3E3E3;
+}
+.elena .timeline::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.elena .timeline .box {
+  width: 45%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 40px;
+  margin: 30px;
+  float: left;
+  clear: both;
+}
+.elena .timeline .box::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: block;
+  background: #00A8FF;
+  position: absolute;
+  left: 50%;
+  margin: -47px 0 0 -7px;
+}
+.elena .timeline .box:nth-child(2n+2) {
+  float: right;
+}
+.elena .timeline .box .img-responsive {
+  width: 150px;
+}
+.elena .timeline strong {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  display: block;
+}
+.elena .timeline span {
+  color: #34c2ad;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.elena .timeline p {
+  margin: 10px 0 0;
+  font-weight: 400;
+  line-height: 26px;
+}
+.elena .skills-box .col {
+  width: 50%;
+  padding: 0 0 0 6%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.elena .skills-box ul {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  list-style-type: circle;
+}
+.elena .skills-box ul.col-sm-3 li {
+  font-size: 18px;
+}
+.elena .skills-box ul.col-sm-3 li:nth-child(even) {
+  color: #FFF;
+}
+.elena .skills-box ul.col-sm-3 li:nth-child(odd) {
+  color: #f9f9f9;
+}
+.elena .skills-box ul.col-sm-3 li:before {
+  list-style-type: circle;
+}
+.elena .skills-box .footnote {
+  margin: 100px 0 0;
+  font-weight: 300;
+  font-size: 14px;
+}
+.elena .cards {
+  font-size: 0;
+  line-height: 0;
+  margin: 0 0 -30px -15px;
+  width: calc(100% + 30px);
+}
+.elena .card {
+  padding: 0 15px 30px;
+  margin: 0;
+  width: 33.333333%;
+  font-weight: 400;
+  line-height: 0;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.elena .card .box {
+  padding: 0;
+  background: #fff;
+}
+.elena .card .box:hover {
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+  box-shadow: 0 2px 14px 5px rgba(0, 0, 0, 0.15);
+}
+.elena .card img {
+  width: 100%;
+}
+.elena .card .summary {
+  background: #F1DD1E;
+  color: #fff;
+  padding: 20px;
+}
+.elena .card span {
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+}
+.elena .card.dark .summary {
+  color: #000;
+}
+.elena .card.dark span {
+  color: #454545;
+}
+.elena .card p {
+  padding: 15px;
+  margin: 0;
+  line-height: 28px;
+  font-size: 18px;
+  color: #8B8B8D;
+}
+.elena .summary.kiteops-summary {
+  background: #5CBC90;
+}
+.elena .summary.sp-summary {
+  background: #FE8D25;
+}
+.elena .summary.runceanu-summary {
+  background: #179DB4;
+}
+.elena .summary.yor-summary {
+  background: #E14E42;
+}
+.elena .summary.benevol-summary {
+  background: #910613;
+}
+.elena .summary.flip-summary {
+  background: #16A085;
+}
+.elena .summary.pa-summary {
+  background: #28261F;
+}
+.elena .contact {
+  font-size: 0;
+  line-height: 0;
+}
+.elena .field {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+.elena .field.field-textarea {
+  width: 100%;
+  padding: 0;
+}
+.elena .field:nth-child(odd) {
+  padding-left: 0;
+}
+.elena .field:nth-child(even) {
+  padding-right: 0;
+}
+.elena .field input,
+.elena .field textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #A8A8AA;
+  box-shadow: inset 700px 0 0 0 #fff, 0 1px 0 #ECECEE;
+  margin: 0;
+  padding: 6px 0;
+  font: 300 18px/28px 'Roboto', 'Arial', sans-serif;
+}
+.elena .field textarea {
+  height: 150px;
+  resize: vertical;
+}
+.elena .field input:focus,
+.elena .field textarea:focus {
+  border-color: #18B1FD;
+}
+.elena .field label {
+  pointer-events: none;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+.elena .field:nth-child(even) label {
+  left: 20px;
+}
+.elena .field.completed label,
+.elena .field input:focus + label,
+.elena .field textarea:focus + label {
+  font-size: 12px;
+  color: #34B2FF;
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+.elena .contact .btn {
+  font-size: 16px;
+  min-width: 50%;
+  padding: 0;
+  margin-top: 50px;
+}
+.elena [required] + label:after {
+  content: '*';
+}
+.elena .field [data-isvalid=false] [required] + label:after {
+  content: '';
+}
+.elena .field[data-isvalid=true] label {
+  color: #38DE8A;
+}
+.elena .field[data-isvalid=false] label {
+  color: #E14E42;
+  text-transform: lowercase;
+}
+.elena .field[data-isvalid=false] label::before {
+  content: 'Please provide your ';
+  text-transform: none;
+}
+.elena .field[data-isvalid=false] label[for="email"]::before {
+  content: 'Looks like an invalid ';
+}
+.elena .field[data-isvalid=false] label[for="message"]::before {
+  content: 'You really should send me a ';
+}
+.elena .field:not([data-isvalid=true]):not(.field_optional) ~ .center input {
+  background: #E14E42;
+}
+.elena .message {
+  margin: 50px 0;
+  font-size: 24px;
+  line-height: 45px;
+  font-weight: 300;
+  text-align: center;
+}
+.elena .message.shown {
+  display: block;
+}
+.elena .message_success {
+  color: #38DE8A;
+}
+.elena .message_error {
+  color: #E14E42;
+}
+.elena #submitform {
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+.elena #submitform[disabled] {
+  background: #eee;
+  font-size: 0;
+  border-radius: 50%;
+  min-width: 45px;
+  width: 45px;
+  cursor: default;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: sendMail 750ms infinite alternate ease-in-out;
+  animation: sendMail 750ms infinite alternate ease-in-out;
+}
+@-webkit-keyframes sendMail {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+@keyframes sendMail {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+}
+.elena footer.grid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+@media (max-width: 420px) {
+  .elena .btn {
+    display: block;
+    text-align: center;
+  }
+  .elena .btn + .btn {
+    margin: 20px 0 0;
+  }
+}
+
+span.divide {
+  margin-right: 10px;
+}
+
+.name {
+  font-size: 18px;
+  color: #FFF;
+  margin-right: 20px;
+}
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans+Condensed:300|PT+Sans+Narrow|PT+Sans:700|Roboto|Open+Sans";'>
+
+<div class="elena container-fluid">
+  <div class="slider">
+    <div class="cont">
+      <div class="mouse"></div>
+      <div class="app">
+        <div class="app__bgimg">
+          <div class="app__bgimg-image app__bgimg-image--1"></div>
+          <div class="app__bgimg-image app__bgimg-image--2"></div>
+        </div>
+        <div class="app__img"> 
+          <img alt="" onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
+        </div>
+        <div class="app__text app__text--1">
+          <div class="app__text-line app__text-line--4">Elena C. Wiener </div>
+          <div class="app__text-line app__text-line--3">Portfolio</div>
+          <div class="app__text-line app__text-line--2">Web Developer // Graphic Designer </div>
+          <div class="app__text-line app__text-line--1">
+            <img alt="" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" />
+          </div>
+        </div>
+        <div class="app__text app__text--2">
+          <div class="app__text-line app__text-line--4">Web  Developer</div> <br/>
+          <div class="app__text-line app__text-line--3">Front End UI</div>
+          <div class="app__text-line app__text-line--2">Graphic Design</div>
+          <div class="app__text-line app__text-line--1">
+            <img alt="elena" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="pages">
+        <ul class='pages__list'>
+          <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
+          <li data-target='2' class='pages__item pages__item--2'></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <header class="menuHidden">
+    <div class="top-bar">		
+      <!--       <button class="menu">
+<em class="hamburger"></em>
+</button> -->
+      <ul class="pull-left social-list">
+        <li>
+          <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+          <div id="SkypeButton_Call_zerospree_1" class="skype">
+            <script type="text/javascript">
+              Skype.ui({
+                "name": "  ",
+                "element": "SkypeButton_Call_zerospree_1",
+                "participants": ["zerospree"],
+                "textColor": "transparent",
+                "imageColor" : "white",
+                "imageSize": 24
+              });
+            </script>
+          </div>
+        </li> 
+        <li><a data-placement="top"  data-toggle="tooltip" title="Codepen" href="https://github.com/ecchwat/" target="_blank" class="link social">
+          <i class="fa fa-codepen"></i></a>
+        </li> 
+        <li>
+          <a href="https://www.facebook.com/eccwiener/" target="_blank" class="link social">
+            <i class="fa fa-facebook-square"></i></a>
+        </li> 
+        <li>
+          <a href="https://www.linkedin.com/in/elenachwat/" target="_blank" class="link social">
+            <i class="fa fa-linkedin-square"></i></a>
+        </li> 
+        <li><a href="http://www.elenawiener.com/" target="_blank" class="link social">
+          <i class="fa fa-external-link-square"></i></a>
+        </li> 
+        <li><a href="https://github.com/ecchwat" target="_blank" class="link social">
+          <i class="fa fa-github"></i></a>
+        </li> 
+      </ul>
+      <div id="SkypeButton_Call_zerospree_1" class="skype"></div>
+      <strong class="name">   Elena C. Wiener   </strong> 
+      <span class="divide">  |   </span> 
+      <a href="mailto:someone@example.com?Subject=Hello" target="_top" class="mail">
+        <span>
+          <span><i class="fa fa-envelope-o"></i></span>
+          <span>ecc.wiener@gmail.com</span> 
+        </span>
+      </a> 
+      <span class="divide">  |   </span> 
+      <strong class="mail"> <span><i class="fa fa-mobile-phone"></i></span>  (516) 724 7210   </strong> 
+    </div>
+  </header>
+  <nav>
+    <div class="grid">
+      <a style="color:white;" href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#works">Portfolio</a>
+      <a href="#examples">Examples</a>
+    </div>
+  </nav>
+
+  <main role="main" class="grid">
+    <section class="box white-box hero" id="about">
+      <img alt="" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-0/p206x206/11050775_10153094637842557_3085829166697950161_n.jpg?oh=50c4a922da18baba516ff49105d092d2&oe=587545B5" class="thumb" />
+      <h1>Elena <small class="last text-muted">[Chwat]</small> Wiener</h1> <br />
+      <h2>Front End Developer, UI/UX, Graphic Design</h2>
+      <p>Passionate and experienced in web development, I design, develop and deliver on-time, clean, fluid mock-ups, pixel-perfect mark-ups with clean, unique user interfaces with the latest technologies to create the perfect user experience.</p>
+      <a class="btn btn-primary blue" href="http://www.elenawiener.com" target="_blank">Personal Website</a>
+      <a class="btn btn-success green" href="#works">See Portfolio</a>
+    </section>
+
+    <h3 id="skills">Skills</h3>
+    <section class="box blue-box skills-box">
+      <div class="row">
+        <h4>Development &amp; Design</h4>
+        <ul class="col-sm-3">
+          <li>HTML5 / CSS3 / SCSS</li>
+          <li>JavaScript / jQuery</li>
+          <li>Bootstrap / Flexbox</li>
+          <li>LESS/SASS</li>
+          <li>Gulp/Grunt</li>
+        </ul>
+        <ul class="col-sm-3">
+          <li>GIT (GitHub, Bitbucket)</li>
+          <li>XCode / Swift</li>
+          <li>Wordpress, Drupal</li>
+          <li>Basecamp, Version1, JIRA</li>
+          <li>Microsoft Visual Studio</li>
+        </ul>
+        <ul class="col-sm-3">
+          <li>Sitecore</li>
+          <li>Version Control</li>
+          <li>Responsive Design</li>
+          <li>PHP, Angular.js, Node.js</li>
+          <li>Photoshop, Illustrator, InDesign</li>
+        </ul>
+        <ul class="col-sm-3">
+          <li>Sketch</li>
+          <li>Balsamiq Wireframes</li>
+          <li>A/B Testing</li>
+          <li>Mobile App Development</li>
+          <li>Responsive Design</li>
+          <li>Agile / Scrum</li>
+        </ul>
+      </div>
+    </section>
+    <section class="box green-box skills-box">
+      <div class="row">
+        <ul class="col-xs-6">
+          <h4>Personal</h4>
+          <li>Passionate, excited and motivated -- always.</li>
+          <li>Detail Oriented</li>
+          <li>Communicative, great team player</li>
+          <li>Works well independently</li>
+        </ul>
+        <ul class="col-xs-6">
+          <h4 style="visibility:hidden;">  hi</h4>
+          <li>Deep understanding of UI/UX</li>
+          <li>Extensive knowledge of the latest technologies</li>
+          <li>Results over process</li>
+          <li>Dog Lover &amp; Camping Enthusiast</li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <h3 id="experience">Experience</h3>
+      <ul class="timeline">
+        <li class="box">
+          <strong>FRONT END UI WEB DEVELOPER</strong> 
+          <a class="company link" href="https://www.adecco.com/" target="_blank"> ADECCO </a> 
+          <span class="date"> Sept 2015 – Present </span> 
+          <span class="divide"> | </span>
+          <span class="location"> Melville, NY</span>
+          <ul class="summary"> 
+            <li>Developing multi-site Sitecore platform accommodating over 200 brands with Global CMS solutions that are compatible, accessible, and can be experienced across all devices, browsers and operating systems.</li>
+            <li>Working with large team in sprint based, scrum style, agile flow; Supporting back-end developer teams with agile methodology.</li>
+            <li>Collaborating with various teams and business units worldwide including functional, production, offshore and rollout teams</li>
+            <li>Re-branding entire design for <a target="_blank" href="https://www.adecco.fr">Adecco France</a> and <a target="_blank" href="https://www.adeccousa.com">Adecco USA</a> while ensuring stability and maintaining all other brands globally using our CMS codebase.</li>
+            <span class="row">
+              <div class="col-xs-4 links">
+                <p><a href="http://www.juddfarris.co.uk/" target="_blank">Judd Farris UK</a></p>
+                <p><a href="http://www.modis.com/" target="_blank">Modis</a></p>
+              </div>
+              <div class="col-xs-4 links">
+                <p><a href="http://www.badenochandclark.it/" target="_blank">Badenoch and Clark</a></p>
+                <p><a href="http://www.springspain.com/es-es/" target="_blank">Spring Spain</a></p>
+              </div>
+              <div class="col-xs-4 links">
+                <p><a href="http://www.adecco.co.jp/" target="_blank">Adecco Japan</a></p>
+                <p><a href="http://www.badenochandclark.it/" target="_blank">Badenoch and Clark</a></p>
+              </div>
+            </span> 
+          </ul> 
+        </li>
+        <li class="box">
+          <strong>LEAD WEB DEVELOPER</strong>
+          <a class="company link" href="https://www.mimvi.com/" target="_blank"> MIMVI </a> 
+          <span class="date"> May – Sep 2016 </span> 
+          <span class="divide"> | </span>
+          <span class="location"> Remote</span>
+          <ul class="summary">
+            <li>Worked with various clients to design, develop, implement, maintain new websites utilizing Wordpress; pre-existing and custom-made themes</li>
+            <li>Assistance with SEO strategies to boost online presence</li>
+            <li>Built themes from scratch for clients to choose from and manage content themselves</li>
+            <li>Created websites from scratch as well as re-branding and moving on to the Wordpress platform for various businesses</li>
+            <li><a href="https://www.mds-ltd.com">MDS-LTD</a>, <a href="https://www.mimvi.com">Mimvi</a>, &amp; more.</li>
+          </ul>
+        </li>
+        <li class="box">
+          <strong>FULL STACK WEB DEVELOPER</strong> 
+          <a class="company link" href="https://www.winwinusa.com/" target="_blank"> WINWINUSA </a> 
+          <span class="date"> Aug 2014 – Aug 2015 </span> 
+          <span class="divide"> | </span>
+          <span class="location"> Bay Shore, NY</span>
+          <ul class="summary"> 
+            <li>Designed and implemented new website for <a href="https://www.winwinusa.com" target="_blank">WinWinUSA.com</a> website, cross-browser testing, maintaining a functional responsive environment.</li>
+            <li>Created a fully responsive, functional interface.</li>
+            <li>Utilized Liferay, HTML/CSS, LESS, Grunt, jQuery, Angular.js, JSON, JSP, BrowserStack, Responsive Design, Mobile, CRM, FTP/SSH software and technologies.</li>
+          </ul>
+        </li>
+        <li class="box">
+          <strong>WEB DESIGNER</strong> 
+          <a class="company link" href="https://www.greatnecksjewelry.com/" target="_blank"> Great Necks Jewelry </a> 
+          <span class="date"> 2011 – 2015 </span> 
+          <span class="divide"> | </span>
+          <span class="location"> Great Neck, NY</span>
+          <ul class="summary"> 
+            <li>Designed and implemented e-commerce website for  local jewelry company, <em>Great Necks Jewelry</em></li>
+            <li>Created a fully responsive, functional user interface.</li>
+            <li>Graphic Design for website including logo, page graphics, Facebook and Google Ads</li>
+            <li>Social Media and SEO Enhancements</li>
+            <li>Utilized Wordpress, Social Media, Photoshop, HTML/CSS, JS, jQuery, Responsive Design and more.</li>
+          </ul>
+        </li>
+        <li class="box">
+          <strong>WEB ASSISTANT</strong> 
+          <a class="company link" href="https://www.ischool.syr.edu/" target="_blank"> iSchool at Syracuse University </a> 
+          <span class="date"> 2011 – 2014 </span> 
+          <span class="divide"> | </span>
+          <span class="location"> Syracuse, NY</span>
+          <ul class="summary">
+            <li>Web and graphic design for the <a href="https://www.ischool.syr.edu">Syracuse School of Information Management &amp; Technology</a> </li>
+            <li>Content Management via custom-made content management system</li>
+            <li>Creation, design and management of all student-affiliated websites using various Wordpress themes</li>
+            <li>
+              <a href="http://www.universityunion.syr.edu/" target="_blank">University Union</a>, 
+              <a href="https://ischool.syr.edu/academics/special-initiatives/women-in-information-technology/" target="_blank">Women in Technology</a>, 
+              <a target="_blank" href="https://ischool.syr.edu/academics/special-initiatives/women-in-it/girls-are-it/">Girls are IT</a>, 
+              <a href="https://ischool.syr.edu/academics/special-initiatives/women-in-it/the-it-girls/the-it-girls-for-high-school-girls/" target="_blank">The IT Girls</a>,
+              <a href="https://ischool.syr.edu/about/student-organizations/beit/" target="_blank">BeIT</a>,  
+              <a href="https://ischool.syr.edu/about/student-organizations/" target="_blank"> and others.</a>        
+            </li>
+          </ul>
+        </li>
+        <li class="box">
+          <strong>SOCIAL MEDIA MANAGER &amp; GRAPHIC DESIGNER</strong> 
+          <a class="company link" href="https://www.emmenation.com/" target="_blank"> EMMENATION </a> 
+          <span class="date"> May – Aug 2013 </span> 
+          <span class="divide"> | </span>
+          <span class="location"> New York, NY</span>
+          <ul class="summary">
+            <li>Increase friends and followers on all EmmeNation social media networks through constant communication and utilization of open source software to track success. - Design flyers for contests, events and interviews,  - Live tweet events Emme attended</li>
+            <li><em>Web Assistant:</em> refresh EmmeNation's site as needed. </li>
+            <li><em>Video Assistant:</em> to attach intros and exits to all the interviews that air on Saturdays.</li>
+          </ul>
+        </li>
+        <li class="box">
+          <strong>GRAPHIC DESIGNER</strong> 
+          <a class="company link" href="https://www.foxnews.com/" target="_blank"> FOX NEWS </a> 
+          <span class="date"> May – Aug 2012 </span> 
+          <span class="divide"> | </span>
+          <span class="location"> New York, NY</span>
+          <ul class="summary">
+            <li>Web and graphic design for Fox News Channel.com. </li>
+            <li>Worked with Design team and created graphic design for social networking pages such as Facebook and Google plus, as well as other graphics for various places around the Fox News website and the Fox News Channel University website and blog.</li>
+          </ul>
+        </li>
+        <li class="box">
+          <strong>WEB DESIGN</strong> 
+          <a class="company link" href="https://www.syracusestudentsandbox.com/" target="_blank">Syracuse Student Sandbox </a> 
+          <span class="date"> March – Aug 2013 </span> 
+          <span class="divide"> | </span>
+          <span class="location"> Syracuse, NY</span>
+          <ul class="summary">
+            <li>Designed and built new website for the Syracuse Student Sandbox; part of the Tech Garden for startups and funding new ideas.</li>
+            <li>Utilized Wordpress and other technologies</li>
+          </ul>
+        </li>
+    <li class="box">
+          <strong>PROJECTS, GROUPS &amp; WORK</strong>
+          <ul class="summary">
+            <li><strong>Long Island Women in Technology</strong> Group for women working in IT based on Long Island </li>
+            <li>Graphic Design, Photo-Retouching – Webepedia - 2014 – 2015</li>
+            <li>Web Designer - Women in IT; The IT Girls; University Union - Syracuse, NY - 2012 – 2014</li>
+            <li>Designer - BeIT, Syracuse, NY - 2011 – 2014</li>
+            <li>Project Managment - SNMP Upgrade Project, MoST Museum, Syracuse, NY | Jan – May 2014</li>  
+            <li>Project Managment / Web Design – 5k At World Refugee Center, Syracuse, NY - 2012</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="text-center button-group">
+        <a class="btn btn-primary" target="_blank" href="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/13754167_10154251798937557_4059720958393652649_n.jpg?oh=209f3ce8c69d15e91ae07a4dde9ce8e3&oe=5838C833">Download My Resume</a> 
+        <a class="btn btn-warning"  href="http://codepen.io/ewiener" target="_blank">Code Examples</a> 
+        <a class="btn btn-danger" href="http://www.elenawiener.com" target="_blank">Portfolio Website</a>
+      </div>
+    </section>
+
+    <h3 id="works">Portfolio</h3>
+    <section>
+      <iframe height='800' scrolling='yes' src='http://www.elenawiener.com/portfolio?height=300&theme-id=24070&default-tab=result,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+      </iframe>
+    </section>
+
+    <h3 id="examples">CodePen Examples</h3>
+    <section class="row">
+      <div class="col-sm-12">
+        <p data-height="340" data-theme-id="22668" data-slug-hash="mVybLm" data-default-tab="html,result" data-user="ewiener" data-embed-version="2" data-preview="true" class="codepen"></p>
+        <hr />
+        <p data-height="400" data-theme-id="22668" data-slug-hash="xVPNMe" data-default-tab="html,css,result" data-user="ewiener" data-embed-version="2" data-preview="true" data-editable="false" class="codepen"></p>
+        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        <hr />
+        <p data-height="340" width="150" data-theme-id="22668" data-slug-hash="eZgaaW" data-default-tab="html,result" data-user="ewiener" data-embed-version="2" data-preview="true" class="codepen"></p>
+        <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+      </div>
+    </section>
+  </main>
+
+  <footer class="grid box white-box">
+    See more of what I do on <a class="link codepen" href="http://codepen.io/ewiener/" target="_blank">Codepen</a>, or chat with me on <a class="link twitter" href="https://twitter.com/elena_chwat" target="_blank">Twitter</a>,  <a class="link linkedin" href="https://linkedin.com/in/ecchwat" target="_blank">LinkedIn</a>, or <a class="link facebook" href="https://www.facebook.com/eccwiener" target="_blank">Facebook</a>.
+  </footer>
+
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/html-inspector/0.8.2/html-inspector.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jsonlint/1.6.0/jsonlint.min.js'></script>
+<script src='http://www.skypeassets.com/i/scom/js/skype-uri.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
